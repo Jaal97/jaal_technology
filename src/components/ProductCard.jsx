@@ -1,6 +1,8 @@
 "use client"
 import React, { useState, useEffect } from 'react'
 import { useParams, useRouter } from 'next/navigation';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const ProductCard = (props) => {
 
@@ -35,7 +37,7 @@ const ProductCard = (props) => {
     return (
         <div className='flex flex-col items-center border-gray-200 rounded-lg shadow md:flex-row md:max-w-2xl  bg-gray-800 hover:bg-gray-700'>
             <picture className='xl:w-full'>
-                <img src={producto.image[img]} alt="" className='p-3 w-screen xl:w-screen' />
+                <img src={producto.image[img]} alt="imagen" className='p-3 w-screen xl:w-screen' />
             </picture>
             <div className='flex flex-col justify-between p-4 leading-normal'>
                 <h3 className='mb-2 text-2xl font-bold tracking-tight text-white text-left'>{producto.titulo}</h3>
@@ -56,7 +58,7 @@ const ProductCard = (props) => {
                 
                 <div className='mt-4'>
                     <button type="button" className="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
-                        <a href={api_w} target='_blank' className='font-bold'>
+                        <Link href={api_w} target='_blank' className='font-bold'>
                             {
                                 !isPro ? (
                                         "Pedir"
@@ -64,7 +66,7 @@ const ProductCard = (props) => {
                                     "Consultar"
                                 )
                             }
-                        </a>
+                        </Link>
                     </button>
                 </div>
             </div>
