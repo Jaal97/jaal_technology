@@ -18,8 +18,8 @@ export let products = [
             "https://down-co.img.susercontent.com/file/7e2f7b3d5f24ffdc0fbed4e0d3d29303",
             "https://down-co.img.susercontent.com/file/cd99f5ec271733cb008c07b50b0514c6",
         ],
-        titulo: "i12 Audífonos bluetooth con funda de dibujos animados",
-        precio: "50.000"
+        titulo: "i12 Audífonos bluetooth + funda de dibujos animados",
+        precio: "50.000",
     },
     {
         id: 2,
@@ -66,6 +66,57 @@ export let products = [
         precio: "60.000"
     }
     
+]
+
+
+export let productsPro = [
+    {
+        id: 1,
+        image: [
+            "https://m.media-amazon.com/images/I/51nBgQabKOL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71IhHGQ3liL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71XylCPzXcL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71LleI6b7YL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71ynJkHE5dL._AC_SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71os7EpuX7L._AC_SL1500_.jpg"
+        ],
+        titulo: "Cámara de seguridad WiFi para interiores 2K 360° con APP, audio de 2 vías, visión nocturna",
+        precio: "Pronto",
+    },
+    {
+        id: 2,
+        image: [
+            "https://down-co.img.susercontent.com/file/7b4da64e198756e606542f84105d37ed",
+            "https://down-co.img.susercontent.com/file/9ce84db58d289390b306197adfd066fd",
+            "https://down-co.img.susercontent.com/file/cn-11134207-7qukw-lfkjnn9qf1aja1",
+            "https://down-co.img.susercontent.com/file/272370f0bde49477226ebb674c1d50e6",
+            "https://down-co.img.susercontent.com/file/cn-11134207-7qukw-lfkojodqgyig9f",
+            "https://down-co.img.susercontent.com/file/cn-11134207-7qukw-lfkojodqid2wa9",
+            "https://down-co.img.susercontent.com/file/cn-11134207-7qukw-lfkojodqfjy0da"
+        ],
+        titulo: "Reproductor HIFI MP3 Bluetooth Altavoces Radio FM Grabador De Voz E-book",
+        precio: "Pronto",
+    },
+    {
+        id: 3,
+        image: [
+            "https://http2.mlstatic.com/D_NQ_NP_2X_602479-MLM47206060281_082021-F.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_2X_704558-MLM47206031438_082021-F.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_2X_604236-MLU73936230089_012024-F.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_2X_726508-MLU74827867541_022024-F.webp",
+            "https://http2.mlstatic.com/D_NQ_NP_2X_918874-MLU74696440308_022024-F.webp",
+        ],
+        titulo: "Power Bank 10000mah 2.1A y 20cm Cable Micro V8 con 2 salidas USB marca 1hora",
+        precio: "Pronto",
+    },
+    // {
+    //     id: 4,
+    //     image: [
+
+    //     ],
+    //     titulo: "",
+    //     precio: "",
+    // },
 ]
 
 

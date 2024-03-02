@@ -5,11 +5,12 @@ import { useParams, useRouter } from 'next/navigation';
 const ProductCard = (props) => {
 
     const router = useRouter()
-
     //Para los parametros que llegan por la URL
     const params = useParams()
     let id = params.id;
     let products = props.products;
+    let isPro = props.isPro;
+    console.log(isPro);
 
     // console.log(params.id);
     // console.log(products[id])
@@ -18,25 +19,18 @@ const ProductCard = (props) => {
     const [img, setImg] = useState(0);
 
     useEffect(() => {
-        // document.title = `You clicked ${img} times`;
-
     })
 
         
     let images_index = producto.image;
-    console.log(images_index)
+    // console.log(images_index)
     let im_in = images_index.indexOf(img)
-    console.log(im_in);
-    // let ind = producto.indexOf(producto.image[img]); 
-    
-    let arreglo = [10, 11, 3, 20, 5];
-
-    let indiceDeTres = arreglo.indexOf(3);
+    // console.log(im_in);
 
     // console.log(indiceDeTres) // 2
-    let text = `Hola!+Deseo+${producto.titulo}+referencia+${producto.image[img]}+contigo`;
 
-    let api_w = `https://api.whatsapp.com/send/?phone=573187186018&text=${text}+&type=phone_number&app_absent=0`;
+    let text= (!isPro ? `Hola!+Deseo+ponerme+en+contacto+contigo+para+pedir+${producto.titulo}` : `Hola!+Deseo+ponerme+en+contacto+contigo+para+consultar+el+producto+${producto.titulo}`);
+    let api_w = `https://api.whatsapp.com/send/?phone=573126289502&text=${text}+&type=phone_number&app_absent=0`;
 
     return (
         <div className='flex flex-col items-center border-gray-200 rounded-lg shadow md:flex-row md:max-w-2xl  bg-gray-800 hover:bg-gray-700'>
@@ -59,16 +53,21 @@ const ProductCard = (props) => {
                         </button>)}
 
                 </div>
+                
                 <div className='mt-4'>
                     <button type="button" className="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
-                        <a href={api_w} className='font-bold'>
-                            Comprar
+                        <a href={api_w} target='_blank' className='font-bold'>
+                            {
+                                !isPro ? (
+                                        "Pedir"
+                                ) : (
+                                    "Consultar"
+                                )
+                            }
                         </a>
                     </button>
                 </div>
-
             </div>
-
         </div>
     )
 }

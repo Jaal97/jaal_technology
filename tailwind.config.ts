@@ -16,6 +16,7 @@ const config: Config = {
       colors: {
         'jaal-line': '#03fa6e',
       },
+      
     },
   },
   plugins: [],
