@@ -4,9 +4,11 @@ import { BiLogoGmail } from "react-icons/bi";
 import { FaWhatsapp } from "react-icons/fa";
 import { TbWorldWww } from "react-icons/tb";
 
+// 2xl:sticky 2xl:bottom-0 2xl:left-0
+
 const Footer = () => {
     return (
-        <footer className=" shadow bg-gray-900 ">
+        <footer className=" shadow bg-gray-900 md:absolute bottom-0 left-0  ... w-full ">
             <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                 <div className="flex items-center justify-between">
 

@@ -18,10 +18,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className="static">
+      <body className={inter.className }>
         <Navbar/>
-        <main>
+        <main className="">
           {children}
         </main>
         <Footer/>

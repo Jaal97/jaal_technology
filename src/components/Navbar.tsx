@@ -16,7 +16,9 @@ const Navbar = () => {
         <nav className='p-5 bg-gray-900 shadow md:flex md:items-center md:justify-between'>
             <div className='flex justify-between items-center'>
                 <span className='text-2xl font-[Poppins] text-white cursor-pointer'>
-                    <img className='h-14 inline' src="https://i.ibb.co/dLJ4Ltt/Logo-Technology-jaal-02.png" alt="Logo-Technology" />
+                    <a href="/">
+                        <img className='h-14 inline' src="https://i.ibb.co/dLJ4Ltt/Logo-Technology-jaal-02.png" alt="Logo-Technology" />
+                    </a>
                 </span>
                 <span className='text-3xl cursor-pointer md:hidden mx-2 block'>
                     <button onClick={toggleNavbar}>
@@ -75,22 +77,22 @@ const Navbar = () => {
             </div>
             <ul className='text-white md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-gray-900 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top[-400px] transition-all ease-in duration-500'>
                 <li className='mx-4 my-6 md:my-0'>
-                    <Link className='text-xl hover:text-cyan-800 duration-400' href="/">
+                    <Link className='text-xl hover:text-jaal-line duration-400' href="/">
                         Home
                     </Link>
                 </li>
                 <li className='mx-4 my-6 md:my-0'>
-                    <Link className='text-xl hover:text-cyan-800 duration-400' href='/acerca_de'>
+                    <Link className='text-xl hover:text-jaal-line duration-400' href='/acerca_de'>
                         Acerca de 
                     </Link>
                 </li>
                 <li className='mx-4 my-6 md:my-0'>
-                    <Link className='text-xl hover:text-cyan-800 duration-400' href="/proximamente">
+                    <Link className='text-xl hover:text-jaal-line duration-400' href="/proximamente">
                         Proximamente
                     </Link>
                 </li>
                 <li className='mx-4 my-6 md:my-0'>
-                    <Link className='text-xl hover:text-cyan-800 duration-400' href="/contacto">
+                    <Link className='text-xl hover:text-jaal-line duration-400' href="/contacto">
                         Contacto
                     </Link>
                 </li>
@@ -102,22 +104,22 @@ const Navbar = () => {
                 <div className='md:hidden z-50'>
                     <ul className='text-gray-900 md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 top[-400px] transition-all ease-in duration-500'>
                         <li className='mx-4 my-6 md:my-0'>
-                            <Link className='text-xl hover:text-cyan-800 duration-400 ' href="/">
+                            <Link className='text-xl hover:text-jaal-line duration-400 ' href="/">
                                 Home
                             </Link>
                         </li>
                         <li className='mx-4 my-6 md:my-0'>
-                            <Link className='text-xl hover:text-cyan-800 duration-400' href="/acerca_de">
+                            <Link className='text-xl hover:text-jaal-line duration-400' href="/acerca_de">
                                 Acerca de
                             </Link>
                         </li>
                         <li className='mx-4 my-6 md:my-0'>
-                            <Link className='text-xl hover:text-cyan-800 duration-400' href="/proximamente">
+                            <Link className='text-xl hover:text-jaal-line duration-400' href="/proximamente">
                                 Proximamente
                             </Link>
                         </li>
                         <li className='mx-4 my-6 md:my-0'>
-                            <Link className='text-xl hover:text-cyan-800 duration-400' href="/contacto">
+                            <Link className='text-xl hover:text-jaal-line duration-400' href="/contacto">
                                 h
                             </Link>
                         </li>

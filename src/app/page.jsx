@@ -1,11 +1,15 @@
 import React from 'react'
-import ProductCard from '@/components/ProductCard'
+import Card from '../components/Card'
+import {products} from '../utils/ProductDB'
 
 const page = () => {
   return (
-    <div className='z-0'>
-      <ProductCard titulo="que hay"/>
-    
+    <div className='flex flex-wrap justify-center gap-4 py-4'>
+      {products.map(product => (
+      <Card className="" product={product} key={product._id} />
+
+      ))}
+
     </div>
   )
 }
