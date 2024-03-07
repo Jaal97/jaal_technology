@@ -6,7 +6,7 @@ const page = () => {
     <div className='flex justify-center'>
       <div className='max-w-lg  border border-gray-200 rounded-lg shadow '>
         <picture className=''>
-          <img src="https://img.freepik.com/foto-gratis/mensaje-correo-o-boton-simbolo-icono-sobre-burbuja-voz-azul-sobre-fondo-blanco-representacion-3d_56104-1184.jpg?t=st=1709412102~exp=1709415702~hmac=5bb887c28344229f6136e54dddca704789f63c629078d9396f093d50a438f935&w=740"
+          <img src="https://cdn.pixabay.com/photo/2019/06/19/07/13/email-4284157_960_720.png"
             className=''
             alt="correo" />
         </picture>
