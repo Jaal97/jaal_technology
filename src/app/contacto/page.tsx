@@ -4,7 +4,7 @@ import Link from 'next/link'
 const page = () => {
   return (
     <div className='flex justify-center'>
-      <div className='max-w-lg  border border-gray-200 rounded-lg shadow '>
+      <div className='max-w-lg  border border-gray-200 rounded-lg shadow mt-3'>
         <picture className=''>
           <img src="https://cdn.pixabay.com/photo/2019/06/19/07/13/email-4284157_960_720.png"
             className=''
